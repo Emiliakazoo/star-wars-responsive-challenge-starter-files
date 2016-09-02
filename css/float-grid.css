@@ -1,0 +1,36 @@
+* {
+	box-sizing:border-box;
+}
+
+/* Grid system, 960px with 20px gutters on either side of the page*/
+
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-4 {
+	float:left;
+	/* percentage based padding, calculated off of the padding being 10px, divided into a max-width 960px page (10/960) */
+	padding-left: 1.04166666%;
+  	padding-right: 1.04166666%;
+  	margin-bottom:20px;
+  	width:100%;
+}
+
+@media only screen and (min-width:640px){
+	.col-4{width:33.33%;}
+}

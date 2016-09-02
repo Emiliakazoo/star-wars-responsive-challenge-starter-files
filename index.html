@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="description" content="Thinkful's Star Wars responsive layout challenge">
+  <meta charset="UTF-8" >
   <title>Star Wars Responsive Challenge</title>
 
   <!-- Responsive viewport tag, tells small screens that it's responsive -->
@@ -9,6 +10,8 @@
 
   <!-- Normalize.css, a cross-browser reset file -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/float-grid.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -17,6 +20,70 @@
 
 </head>
 <body>
+<header>
+<h1>Star Wars Characters</h1>
+<p class="subhead">Incomplete list</p>
+</header>
+
+<main>
+	<div class="row">
+		<div class="col-4">
+			<div class="character-card">
+				<img class="character-pic" src="images/rey_square.png" alt="Rey" title="Rey" />
+				<div class="stats">
+					<h3 class="character-name">Rey</h3>
+					<p class="character-description">Protagonist, from Tattooine</p>
+				</div>	
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="character-card">
+				<img class="character-pic" src="images/finn_square.png" alt="Finn" title="Finn" />
+				<div class="stats">
+					<h3 class="character-name">Finn</h3>
+					<p class="character-description">Storm Trooper, befriends Ray</p>
+				</div>	
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="character-card">
+				<img class="character-pic" src="images/kylo_square.png" alt="Kylo" title="Kylo" />
+				<div class="stats">
+					<h3 class="character-name">Kylo</h3>
+					<p class="character-description">Main villain, or is he?</p>
+				</div>		
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="character-card">
+				<img class="character-pic" src="images/poe_square.png" alt="Poe" title="Poe" />
+				<div class="stats">
+					<h3 class="character-name">Poe</h3>
+					<p class="character-description">Neutral pilot</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="character-card">
+				<img class="character-pic" src="images/Chewbacca_square.png" alt="Chewbacca" title="Chewbacca" />
+				<div class="stats">
+					<h3 class="character-name">Chewbacca</h3>
+					<p class="character-description">A great first mate</p>
+				</div>	
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="character-card">
+				<img class="character-pic" src="images/yoda_square.png" alt="Yoda" title="Yoda" />
+				<div class="stats">
+					<h3 class="character-name">Yoda</h3>
+					<p class="character-description">Wise old Jedi master</p>
+				</div>
+			</div>
+		</div>
+	</div><!--grid goes here!-->
+
+</main>
 
 </body>
 </html>

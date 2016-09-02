@@ -1,0 +1,42 @@
+* {
+	font-family:'Roboto', sans-serif;
+}
+
+header {
+	background-color: #e7b85b;
+	width:100%;
+	padding:15px 0;
+}
+h1, .subhead {
+	max-width:940px;
+	margin:0 auto;
+	width:90%;
+}
+main {
+	padding-top:20px;
+}
+
+.stats {
+	padding:15px;
+}
+
+.character-pic {
+	width:100%;
+}
+.character-card {
+	border:1px solid #ccc;
+}
+.character-name {
+	margin:0;
+}
+.character-description {
+	margin-top:5px;
+	margin-bottom:10px;
+	height:35px;
+}
+
+@media only screen and (min-width:640px) {
+	.character-card {
+		min-height:300px;
+	}
+}
